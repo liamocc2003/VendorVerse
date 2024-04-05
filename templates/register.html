@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}"/>
+    <title>Register for vendorVerse!</title>
+
+    
+</head>
+
+<body>
+    <div class="register">
+        <form>
+            <div class="form_element">
+                <h2>Please register your business with vendorVerse</h2>
+                <label for="email">Email</label> 
+                <input type="text" name="email" id="email"></input>
+            </div>
+            <div class="form_element">
+                <label for="password">Password</label>
+                <input name="password" id="password" type="text"></input>
+            </div>
+            <div class="form_element">
+                <label for="confirm_password">Confirm Password</label>
+                <input name="confirm_password" id="confirm_password" type="text"></input>
+            </div>
+
+            <br>
+            <button>Login</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}"/>
+    <title>Login to VendorVerse!</title>
+
+    
+</head>
+
+<body>
+    <div class="login">
+        <form>
+            <div class="form_element">
+                <h2>Please login to use the application</h2>
+                <label for="email">Email</label> 
+                <input type="text" name="email" id="email"></input>
+            </div>
+            <div class="form_element">
+                <label for="password">Password</label>
+                <input name="password" id="password" type="password"></input>
+            </div>
+            <br>
+            <button>Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
