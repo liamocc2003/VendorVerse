@@ -1,2 +1,0 @@
-# VendorVerse
-Intern Project Test
