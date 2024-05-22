@@ -2,6 +2,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    width: 100wh;
 }
 
 .cd__main{
@@ -16,12 +17,42 @@ body {
     width: 600px;
 }
 
+#about_us{
+    padding-top: 100px;
+}
+
+Select{
+    padding:2px;
+}
+
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+    }
+.gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+    }
+
 #calendar {
     background: #fff;
-    max-width: 1000px;
+    min-height: 390px;
+    min-width: 300px;
+    max-width: 800px;
     margin: 40px;
-    padding: 20px
-
+    padding: 20px;
 }
 
 #text_section{
@@ -104,7 +135,6 @@ body {
 
 .context-menu ul>li {
     display: block;
-    ;
     padding: 5px 15px;
     list-style-type: none;
     color: #333;

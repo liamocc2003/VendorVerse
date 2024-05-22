@@ -17,4 +17,4 @@ def register():
 
 @app.route('/home')
 def home():
-    return render_template('public_home_page.html')
+    return render_template('home_page.html')

@@ -2,60 +2,57 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}"/>
     <title>Login to VendorVerse!</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./static/style.css">
 
-    <style>
-        body
-        {
-            background:#c5d5cb !important;
-        }
-    </style>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+   
 </head>
 
 <body>
+  <section class="vh-100">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+      <div class="container vh-80">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-xs-12 col-sm-12 col-md-10 col-lg-6 col-xl-5">
+            <div class="card" style="height: 80vh;" style="border-radius: 15px;">
+              <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Login to VendorVerse</h2>
 
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">VendorVerse</a>
+              <form>
+
+                <div data-mdb-input-init class="form-outline mb-4">
+                  <label class="form-label" for="Email">Email Address</label>
+                  <input type="email" id="Email" class="form-control form-control-md" />
+                </div>
+
+                <div data-mdb-input-init class="form-outline mb-4">
+                  <label class="form-label" for="Password">Password</label>
+                  <input type="password" id="Password" class="form-control form-control-md" />
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <button  type="button" data-mdb-button-init
+                    data-mdb-ripple-init class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Login</button>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">Don't have an account? <a href="register"
+                  class="fw-bold text-body">Register</a></p>
+
+                <p class="text-center text-muted mt-5 mb-0">Forgot you Password? <a href="#"
+                    class="fw-bold text-body">Reset Password</a></p>
+
+              </form>
+
+            </div>
           </div>
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Register</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
-          </ul>
         </div>
-      </nav>
-    <div class="login">
-        <form>
-            <div class="form_element">
-                <h2>Please login to VendorVerse!</h2>
-                <br>
-                <label for="email">Email</label> 
-                <input type="text" name="email" id="email"></input>
-            </div>
-            <div class="form_element">
-                <label for="password">Password</label>
-                <input name="password" id="password" type="password"></input>
-            </div>
-            <a href="register">Don't have an account? Sign up here!</a>
-            <br>
-            <br>
-            <button class="btn btn-primary">Login</button>
-        </form>
+      </div>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </div>
+</section>
 </body>
 
 </html>

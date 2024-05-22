@@ -17,6 +17,10 @@ body{
 	text-align: center;
 }
 
+.container{
+    height: 80%;
+}
+
 label {
     display: inline-block;
     width: 110px;

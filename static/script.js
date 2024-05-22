@@ -46,9 +46,6 @@ const myEvents = JSON.parse(localStorage.getItem('events')) || [
           close.addEventListener('click', () => {
             myModal.hide()
           })
-
-          
-
         }
       }
     },
